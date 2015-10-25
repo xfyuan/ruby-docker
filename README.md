@@ -10,8 +10,8 @@
 
 ### For special rails features
 
+- install bundler gem
 - install packages for js runtime: nodejs
 - install packages for nokogiri
 - install packages for capybara-webkit
-- install bundler gem
 - set BUNDLE_PATH to path /rubygems, then we can mount a volume to store gems cache
