@@ -18,7 +18,6 @@ RUN rm -rf /var/lib/apt/lists/*
 # install bundler and setting it
 # ==============================
 RUN gem install bundler
-RUN bundle config --global frozen 1
 # ENV GEM_HOME /rubygems
 ENV BUNDLE_PATH /rubygems
 # ENV PATH /rubygems/bin:$PATH
