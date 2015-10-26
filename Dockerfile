@@ -18,7 +18,7 @@ RUN rm -rf /var/lib/apt/lists/*
 # install bundler and setting it
 # ==============================
 RUN gem install bundler
-ENV BUNDLE_PATH /gems
+ENV BUNDLE_PATH /rubygems
 
 # =================
 # set app directory
@@ -27,3 +27,7 @@ ENV APP_HOME /myapp
 RUN mkdir -p $APP_HOME
 WORKDIR $APP_HOME
 
+# =============
+# add app files
+# =============
+COPY . $APP_HOME
